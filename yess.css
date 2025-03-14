@@ -1,0 +1,260 @@
+#yess.css * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: all o.5s ease-in;
+}
+
+i {
+  color: white;
+  padding: 10px;
+  background-color: green;
+}
+
+i:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+nav {
+  background-color: black;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.heading {
+}
+
+.like {
+  border: 1px solid;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+}
+.like > i {
+  color: black;
+}
+
+.like:hover {
+  background-color: #ccc;
+}
+
+.reply {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.replan span {
+  color: black;
+  background-color: white;
+  padding: 2px 5px;
+}
+
+.blog-right {
+  padding: 0;
+  background-color: black;
+}
+
+.small-container {
+  width: 100%;
+  height: 300%;
+}
+
+.small-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-footer {
+  color: white;
+  padding: 10;
+}
+
+.my-name {
+  font-size: 25px;
+}
+
+.post-title {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.post {
+  background-color: white;
+}
+
+.ads {
+  margin: 10px;
+  background-color: #ccc;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags {
+  padding: 1opx;
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #eee;
+  padding: 4px;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tag:first-child {
+  background-color: black;
+  color: white;
+}
+
+.image-grid {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 1opx;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.socials {
+  padding: 1opx;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social i {
+  color: black;
+}
+
+.form {
+  padding: 10px;
+}
+
+.form p {
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 5px;
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin: 5px;
+}
+
+button {
+  background-color: #f44335;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 40px;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+@media screen and [max-width: 425px] {
+  main {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+
+  .blog {
+    flex-wrap: wrap;
+  }
+
+  .blog-left {
+    flex-basis: 100%;
+  }
+
+  .blog-right {
+    flex-basis: 100%;
+  }
+
+  @media screen and [max-width: 768px] {
+    main {
+      width: 90%;
+    }
+  }
+
+  .blog {
+    flex-wrap: wrap;
+  }
+
+  .blog-left {
+    flex-basis: 100%;
+  }
+
+  .blog-right {
+    flex-basis: 100%;
+  }
+}
